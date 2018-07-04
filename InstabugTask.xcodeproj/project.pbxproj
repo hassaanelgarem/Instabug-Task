@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		800A3D4C20ECD78E00F2C962 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 800A3D4B20ECD78E00F2C962 /* AppDelegate.m */; };
+		800A3D4F20ECD78E00F2C962 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 800A3D4E20ECD78E00F2C962 /* ViewController.m */; };
+		800A3D5220ECD78E00F2C962 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 800A3D5020ECD78E00F2C962 /* Main.storyboard */; };
+		800A3D5520ECD78E00F2C962 /* InstabugTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 800A3D5320ECD78E00F2C962 /* InstabugTask.xcdatamodeld */; };
+		800A3D5720ECD78E00F2C962 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 800A3D5620ECD78E00F2C962 /* Assets.xcassets */; };
+		800A3D5A20ECD78E00F2C962 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 800A3D5820ECD78E00F2C962 /* LaunchScreen.storyboard */; };
+		800A3D5D20ECD78E00F2C962 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 800A3D5C20ECD78E00F2C962 /* main.m */; };
+		800A3D6720ECD78E00F2C962 /* InstabugTaskTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 800A3D6620ECD78E00F2C962 /* InstabugTaskTests.m */; };
+		800A3D7220ECD78E00F2C962 /* InstabugTaskUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 800A3D7120ECD78E00F2C962 /* InstabugTaskUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		800A3D6320ECD78E00F2C962 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 800A3D3F20ECD78E00F2C962 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 800A3D4620ECD78E00F2C962;
+			remoteInfo = InstabugTask;
+		};
+		800A3D6E20ECD78E00F2C962 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 800A3D3F20ECD78E00F2C962 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 800A3D4620ECD78E00F2C962;
+			remoteInfo = InstabugTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		800A3D4720ECD78E00F2C962 /* InstabugTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstabugTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		800A3D4A20ECD78E00F2C962 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		800A3D4B20ECD78E00F2C962 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		800A3D4D20ECD78E00F2C962 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		800A3D4E20ECD78E00F2C962 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		800A3D5120ECD78E00F2C962 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		800A3D5420ECD78E00F2C962 /* InstabugTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = InstabugTask.xcdatamodel; sourceTree = "<group>"; };
+		800A3D5620ECD78E00F2C962 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		800A3D5920ECD78E00F2C962 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		800A3D5B20ECD78E00F2C962 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		800A3D5C20ECD78E00F2C962 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		800A3D6220ECD78E00F2C962 /* InstabugTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstabugTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		800A3D6620ECD78E00F2C962 /* InstabugTaskTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstabugTaskTests.m; sourceTree = "<group>"; };
+		800A3D6820ECD78E00F2C962 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		800A3D6D20ECD78E00F2C962 /* InstabugTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstabugTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		800A3D7120ECD78E00F2C962 /* InstabugTaskUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstabugTaskUITests.m; sourceTree = "<group>"; };
+		800A3D7320ECD78E00F2C962 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		800A3D4420ECD78E00F2C962 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		800A3D5F20ECD78E00F2C962 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		800A3D6A20ECD78E00F2C962 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		800A3D3E20ECD78E00F2C962 = {
+			isa = PBXGroup;
+			children = (
+				800A3D4920ECD78E00F2C962 /* InstabugTask */,
+				800A3D6520ECD78E00F2C962 /* InstabugTaskTests */,
+				800A3D7020ECD78E00F2C962 /* InstabugTaskUITests */,
+				800A3D4820ECD78E00F2C962 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		800A3D4820ECD78E00F2C962 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				800A3D4720ECD78E00F2C962 /* InstabugTask.app */,
+				800A3D6220ECD78E00F2C962 /* InstabugTaskTests.xctest */,
+				800A3D6D20ECD78E00F2C962 /* InstabugTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		800A3D4920ECD78E00F2C962 /* InstabugTask */ = {
+			isa = PBXGroup;
+			children = (
+				800A3D4A20ECD78E00F2C962 /* AppDelegate.h */,
+				800A3D4B20ECD78E00F2C962 /* AppDelegate.m */,
+				800A3D4D20ECD78E00F2C962 /* ViewController.h */,
+				800A3D4E20ECD78E00F2C962 /* ViewController.m */,
+				800A3D5020ECD78E00F2C962 /* Main.storyboard */,
+				800A3D5620ECD78E00F2C962 /* Assets.xcassets */,
+				800A3D5820ECD78E00F2C962 /* LaunchScreen.storyboard */,
+				800A3D5B20ECD78E00F2C962 /* Info.plist */,
+				800A3D5C20ECD78E00F2C962 /* main.m */,
+				800A3D5320ECD78E00F2C962 /* InstabugTask.xcdatamodeld */,
+			);
+			path = InstabugTask;
+			sourceTree = "<group>";
+		};
+		800A3D6520ECD78E00F2C962 /* InstabugTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				800A3D6620ECD78E00F2C962 /* InstabugTaskTests.m */,
+				800A3D6820ECD78E00F2C962 /* Info.plist */,
+			);
+			path = InstabugTaskTests;
+			sourceTree = "<group>";
+		};
+		800A3D7020ECD78E00F2C962 /* InstabugTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				800A3D7120ECD78E00F2C962 /* InstabugTaskUITests.m */,
+				800A3D7320ECD78E00F2C962 /* Info.plist */,
+			);
+			path = InstabugTaskUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		800A3D4620ECD78E00F2C962 /* InstabugTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 800A3D7620ECD78E00F2C962 /* Build configuration list for PBXNativeTarget "InstabugTask" */;
+			buildPhases = (
+				800A3D4320ECD78E00F2C962 /* Sources */,
+				800A3D4420ECD78E00F2C962 /* Frameworks */,
+				800A3D4520ECD78E00F2C962 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InstabugTask;
+			productName = InstabugTask;
+			productReference = 800A3D4720ECD78E00F2C962 /* InstabugTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		800A3D6120ECD78E00F2C962 /* InstabugTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 800A3D7920ECD78E00F2C962 /* Build configuration list for PBXNativeTarget "InstabugTaskTests" */;
+			buildPhases = (
+				800A3D5E20ECD78E00F2C962 /* Sources */,
+				800A3D5F20ECD78E00F2C962 /* Frameworks */,
+				800A3D6020ECD78E00F2C962 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				800A3D6420ECD78E00F2C962 /* PBXTargetDependency */,
+			);
+			name = InstabugTaskTests;
+			productName = InstabugTaskTests;
+			productReference = 800A3D6220ECD78E00F2C962 /* InstabugTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		800A3D6C20ECD78E00F2C962 /* InstabugTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 800A3D7C20ECD78E00F2C962 /* Build configuration list for PBXNativeTarget "InstabugTaskUITests" */;
+			buildPhases = (
+				800A3D6920ECD78E00F2C962 /* Sources */,
+				800A3D6A20ECD78E00F2C962 /* Frameworks */,
+				800A3D6B20ECD78E00F2C962 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				800A3D6F20ECD78E00F2C962 /* PBXTargetDependency */,
+			);
+			name = InstabugTaskUITests;
+			productName = InstabugTaskUITests;
+			productReference = 800A3D6D20ECD78E00F2C962 /* InstabugTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		800A3D3F20ECD78E00F2C962 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Garem;
+				TargetAttributes = {
+					800A3D4620ECD78E00F2C962 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					800A3D6120ECD78E00F2C962 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 800A3D4620ECD78E00F2C962;
+					};
+					800A3D6C20ECD78E00F2C962 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 800A3D4620ECD78E00F2C962;
+					};
+				};
+			};
+			buildConfigurationList = 800A3D4220ECD78E00F2C962 /* Build configuration list for PBXProject "InstabugTask" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 800A3D3E20ECD78E00F2C962;
+			productRefGroup = 800A3D4820ECD78E00F2C962 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				800A3D4620ECD78E00F2C962 /* InstabugTask */,
+				800A3D6120ECD78E00F2C962 /* InstabugTaskTests */,
+				800A3D6C20ECD78E00F2C962 /* InstabugTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		800A3D4520ECD78E00F2C962 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				800A3D5A20ECD78E00F2C962 /* LaunchScreen.storyboard in Resources */,
+				800A3D5720ECD78E00F2C962 /* Assets.xcassets in Resources */,
+				800A3D5220ECD78E00F2C962 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		800A3D6020ECD78E00F2C962 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		800A3D6B20ECD78E00F2C962 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		800A3D4320ECD78E00F2C962 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				800A3D5520ECD78E00F2C962 /* InstabugTask.xcdatamodeld in Sources */,
+				800A3D4F20ECD78E00F2C962 /* ViewController.m in Sources */,
+				800A3D5D20ECD78E00F2C962 /* main.m in Sources */,
+				800A3D4C20ECD78E00F2C962 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		800A3D5E20ECD78E00F2C962 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				800A3D6720ECD78E00F2C962 /* InstabugTaskTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		800A3D6920ECD78E00F2C962 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				800A3D7220ECD78E00F2C962 /* InstabugTaskUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		800A3D6420ECD78E00F2C962 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 800A3D4620ECD78E00F2C962 /* InstabugTask */;
+			targetProxy = 800A3D6320ECD78E00F2C962 /* PBXContainerItemProxy */;
+		};
+		800A3D6F20ECD78E00F2C962 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 800A3D4620ECD78E00F2C962 /* InstabugTask */;
+			targetProxy = 800A3D6E20ECD78E00F2C962 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		800A3D5020ECD78E00F2C962 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				800A3D5120ECD78E00F2C962 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		800A3D5820ECD78E00F2C962 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				800A3D5920ECD78E00F2C962 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		800A3D7420ECD78E00F2C962 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		800A3D7520ECD78E00F2C962 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		800A3D7720ECD78E00F2C962 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KS5GBRCBHB;
+				INFOPLIST_FILE = InstabugTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Garem.InstabugTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		800A3D7820ECD78E00F2C962 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KS5GBRCBHB;
+				INFOPLIST_FILE = InstabugTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Garem.InstabugTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		800A3D7A20ECD78E00F2C962 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KS5GBRCBHB;
+				INFOPLIST_FILE = InstabugTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Garem.InstabugTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstabugTask.app/InstabugTask";
+			};
+			name = Debug;
+		};
+		800A3D7B20ECD78E00F2C962 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KS5GBRCBHB;
+				INFOPLIST_FILE = InstabugTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Garem.InstabugTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstabugTask.app/InstabugTask";
+			};
+			name = Release;
+		};
+		800A3D7D20ECD78E00F2C962 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KS5GBRCBHB;
+				INFOPLIST_FILE = InstabugTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Garem.InstabugTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InstabugTask;
+			};
+			name = Debug;
+		};
+		800A3D7E20ECD78E00F2C962 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KS5GBRCBHB;
+				INFOPLIST_FILE = InstabugTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Garem.InstabugTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InstabugTask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		800A3D4220ECD78E00F2C962 /* Build configuration list for PBXProject "InstabugTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				800A3D7420ECD78E00F2C962 /* Debug */,
+				800A3D7520ECD78E00F2C962 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		800A3D7620ECD78E00F2C962 /* Build configuration list for PBXNativeTarget "InstabugTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				800A3D7720ECD78E00F2C962 /* Debug */,
+				800A3D7820ECD78E00F2C962 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		800A3D7920ECD78E00F2C962 /* Build configuration list for PBXNativeTarget "InstabugTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				800A3D7A20ECD78E00F2C962 /* Debug */,
+				800A3D7B20ECD78E00F2C962 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		800A3D7C20ECD78E00F2C962 /* Build configuration list for PBXNativeTarget "InstabugTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				800A3D7D20ECD78E00F2C962 /* Debug */,
+				800A3D7E20ECD78E00F2C962 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		800A3D5320ECD78E00F2C962 /* InstabugTask.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				800A3D5420ECD78E00F2C962 /* InstabugTask.xcdatamodel */,
+			);
+			currentVersion = 800A3D5420ECD78E00F2C962 /* InstabugTask.xcdatamodel */;
+			path = InstabugTask.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 800A3D3F20ECD78E00F2C962 /* Project object */;
+}
