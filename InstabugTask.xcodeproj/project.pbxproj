@@ -14,8 +14,12 @@
 		800A3D5720ECD78E00F2C962 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 800A3D5620ECD78E00F2C962 /* Assets.xcassets */; };
 		800A3D5A20ECD78E00F2C962 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 800A3D5820ECD78E00F2C962 /* LaunchScreen.storyboard */; };
 		800A3D5D20ECD78E00F2C962 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 800A3D5C20ECD78E00F2C962 /* main.m */; };
-		800A3D6720ECD78E00F2C962 /* InstabugTaskTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 800A3D6620ECD78E00F2C962 /* InstabugTaskTests.m */; };
-		800A3D7220ECD78E00F2C962 /* InstabugTaskUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 800A3D7120ECD78E00F2C962 /* InstabugTaskUITests.m */; };
+		800A3D8420ECEB0000F2C962 /* APIWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 800A3D8320ECEB0000F2C962 /* APIWrapper.m */; };
+		800A3D8620ECF9CA00F2C962 /* APIWrapperTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 800A3D8520ECF9CA00F2C962 /* APIWrapperTest.m */; };
+		800A3D8920ED0ED400F2C962 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 800A3D8820ED0ED400F2C962 /* Product.m */; };
+		800A3D8C20ED0EE800F2C962 /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 800A3D8B20ED0EE800F2C962 /* Image.m */; };
+		800A3D9220ED257B00F2C962 /* ProductTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 800A3D9120ED257A00F2C962 /* ProductTableViewCell.m */; };
+		80C9F98320EE16DC00D16C0C /* ProductDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C9F98220EE16DC00D16C0C /* ProductDetailsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,11 +52,20 @@
 		800A3D5B20ECD78E00F2C962 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		800A3D5C20ECD78E00F2C962 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		800A3D6220ECD78E00F2C962 /* InstabugTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstabugTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		800A3D6620ECD78E00F2C962 /* InstabugTaskTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstabugTaskTests.m; sourceTree = "<group>"; };
 		800A3D6820ECD78E00F2C962 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		800A3D6D20ECD78E00F2C962 /* InstabugTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstabugTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		800A3D7120ECD78E00F2C962 /* InstabugTaskUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstabugTaskUITests.m; sourceTree = "<group>"; };
 		800A3D7320ECD78E00F2C962 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		800A3D8220ECEB0000F2C962 /* APIWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIWrapper.h; sourceTree = "<group>"; };
+		800A3D8320ECEB0000F2C962 /* APIWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIWrapper.m; sourceTree = "<group>"; };
+		800A3D8520ECF9CA00F2C962 /* APIWrapperTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIWrapperTest.m; sourceTree = "<group>"; };
+		800A3D8720ED0ED400F2C962 /* Product.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		800A3D8820ED0ED400F2C962 /* Product.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		800A3D8A20ED0EE800F2C962 /* Image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		800A3D8B20ED0EE800F2C962 /* Image.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Image.m; sourceTree = "<group>"; };
+		800A3D9020ED257A00F2C962 /* ProductTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductTableViewCell.h; sourceTree = "<group>"; };
+		800A3D9120ED257A00F2C962 /* ProductTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductTableViewCell.m; sourceTree = "<group>"; };
+		80C9F98120EE16DC00D16C0C /* ProductDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductDetailsViewController.h; sourceTree = "<group>"; };
+		80C9F98220EE16DC00D16C0C /* ProductDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductDetailsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +116,12 @@
 		800A3D4920ECD78E00F2C962 /* InstabugTask */ = {
 			isa = PBXGroup;
 			children = (
+				800A3D8E20ED129000F2C962 /* API */,
+				800A3D8F20ED129C00F2C962 /* Controllers */,
+				800A3D8D20ED105700F2C962 /* Models */,
+				80C9F98420EE373B00D16C0C /* Views */,
 				800A3D4A20ECD78E00F2C962 /* AppDelegate.h */,
 				800A3D4B20ECD78E00F2C962 /* AppDelegate.m */,
-				800A3D4D20ECD78E00F2C962 /* ViewController.h */,
-				800A3D4E20ECD78E00F2C962 /* ViewController.m */,
 				800A3D5020ECD78E00F2C962 /* Main.storyboard */,
 				800A3D5620ECD78E00F2C962 /* Assets.xcassets */,
 				800A3D5820ECD78E00F2C962 /* LaunchScreen.storyboard */,
@@ -120,7 +135,7 @@
 		800A3D6520ECD78E00F2C962 /* InstabugTaskTests */ = {
 			isa = PBXGroup;
 			children = (
-				800A3D6620ECD78E00F2C962 /* InstabugTaskTests.m */,
+				800A3D8520ECF9CA00F2C962 /* APIWrapperTest.m */,
 				800A3D6820ECD78E00F2C962 /* Info.plist */,
 			);
 			path = InstabugTaskTests;
@@ -129,10 +144,49 @@
 		800A3D7020ECD78E00F2C962 /* InstabugTaskUITests */ = {
 			isa = PBXGroup;
 			children = (
-				800A3D7120ECD78E00F2C962 /* InstabugTaskUITests.m */,
 				800A3D7320ECD78E00F2C962 /* Info.plist */,
 			);
 			path = InstabugTaskUITests;
+			sourceTree = "<group>";
+		};
+		800A3D8D20ED105700F2C962 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				800A3D8720ED0ED400F2C962 /* Product.h */,
+				800A3D8820ED0ED400F2C962 /* Product.m */,
+				800A3D8A20ED0EE800F2C962 /* Image.h */,
+				800A3D8B20ED0EE800F2C962 /* Image.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		800A3D8E20ED129000F2C962 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				800A3D8220ECEB0000F2C962 /* APIWrapper.h */,
+				800A3D8320ECEB0000F2C962 /* APIWrapper.m */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		800A3D8F20ED129C00F2C962 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				800A3D4D20ECD78E00F2C962 /* ViewController.h */,
+				800A3D4E20ECD78E00F2C962 /* ViewController.m */,
+				80C9F98120EE16DC00D16C0C /* ProductDetailsViewController.h */,
+				80C9F98220EE16DC00D16C0C /* ProductDetailsViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		80C9F98420EE373B00D16C0C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				800A3D9020ED257A00F2C962 /* ProductTableViewCell.h */,
+				800A3D9120ED257A00F2C962 /* ProductTableViewCell.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,10 +322,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80C9F98320EE16DC00D16C0C /* ProductDetailsViewController.m in Sources */,
 				800A3D5520ECD78E00F2C962 /* InstabugTask.xcdatamodeld in Sources */,
 				800A3D4F20ECD78E00F2C962 /* ViewController.m in Sources */,
 				800A3D5D20ECD78E00F2C962 /* main.m in Sources */,
+				800A3D8920ED0ED400F2C962 /* Product.m in Sources */,
 				800A3D4C20ECD78E00F2C962 /* AppDelegate.m in Sources */,
+				800A3D9220ED257B00F2C962 /* ProductTableViewCell.m in Sources */,
+				800A3D8420ECEB0000F2C962 /* APIWrapper.m in Sources */,
+				800A3D8C20ED0EE800F2C962 /* Image.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				800A3D6720ECD78E00F2C962 /* InstabugTaskTests.m in Sources */,
+				800A3D8620ECF9CA00F2C962 /* APIWrapperTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +346,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				800A3D7220ECD78E00F2C962 /* InstabugTaskUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
