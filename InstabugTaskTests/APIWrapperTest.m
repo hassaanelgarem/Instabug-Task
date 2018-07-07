@@ -25,14 +25,4 @@
     [super tearDown];
 }
 
-//- (void) modifyURLTest {
-//    NSString *baseURL = @"http://grapesnberries.getsandbox.com/products?count=10&from=1";
-//    NSDictionary *params = [[NSDictionary alloc] initWithObjectsAndKeys:
-//                            [NSNumber numberWithInt:10], @"count",
-//                            [NSNumber numberWithInt:1], @"from",
-//                            nil];
-//    NSString *expectedURL = @"http://grapesnberries.getsandbox.com/products?count=10&from=1";
-//    NSString *modifiedURL = [APIWrapper modifyURL:baseURL withQueryParameters:params]
-//}
-
 @end

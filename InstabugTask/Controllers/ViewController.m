@@ -99,6 +99,7 @@
 
 - (void) tableSetup {
     tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    tableView.accessibilityIdentifier = @"mainTableView";
     tableView.delegate = self;
     tableView.dataSource = self;
     tableView.backgroundColor = [UIColor cyanColor];

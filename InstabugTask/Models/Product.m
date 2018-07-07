@@ -29,16 +29,21 @@
                             nil];
     
     [APIWrapper getRequest:@"http://grapesnberries.getsandbox.com/products" withParameters: params withCompletionHandler:^(NSArray *responseDictionary) {
-        NSMutableArray *productsArray = [[NSMutableArray alloc] initWithCapacity:count];
-        for (NSDictionary* productJson in responseDictionary) {
-            int productID = [[productJson objectForKey:@"id"] intValue];
-            int productPrice = [[productJson objectForKey:@"price"] intValue];
-            NSString *productDescription = [productJson objectForKey:@"productDescription"];
-            NSString *productImage = @"https://blog.instabug.com/wp-content/uploads/2015/02/instabug.jpg";
-            Product *product = [[Product alloc] initWithID: productID withDescription: productDescription withPrice: productPrice withImage: productImage];
-            [productsArray addObject:product];
+        if (responseDictionary){
+            NSMutableArray *productsArray = [[NSMutableArray alloc] initWithCapacity:count];
+            for (NSDictionary* productJson in responseDictionary) {
+                int productID = [[productJson objectForKey:@"id"] intValue];
+                int productPrice = [[productJson objectForKey:@"price"] intValue];
+                NSString *productDescription = [productJson objectForKey:@"productDescription"];
+                NSString *productImage = @"https://blog.instabug.com/wp-content/uploads/2015/02/instabug.jpg";
+                Product *product = [[Product alloc] initWithID: productID withDescription: productDescription withPrice: productPrice withImage: productImage];
+                [productsArray addObject:product];
+            }
+            completionHandler(productsArray);
+        } else {
+            completionHandler(nil);
         }
-        completionHandler(productsArray);
+        
     }];
 }
 

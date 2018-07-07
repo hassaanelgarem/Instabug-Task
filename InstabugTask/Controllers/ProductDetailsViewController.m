@@ -42,13 +42,16 @@
     descriptionLabel.font = [UIFont fontWithName:@"Arial" size:12.0f];
     descriptionLabel.numberOfLines = 0;
     descriptionLabel.textAlignment = NSTextAlignmentCenter;
+    descriptionLabel.accessibilityIdentifier = @"descriptionLabel";
     
     productImage = [[UIImageView alloc] initWithFrame: CGRectMake(0, 0, 50, 50)];
+    productImage.accessibilityIdentifier = @"detailedImage";
     
     priceLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
     priceLabel.textColor = [UIColor blackColor];
     priceLabel.font = [UIFont fontWithName:@"Arial" size:12.0f];
     priceLabel.textAlignment = NSTextAlignmentCenter;
+    priceLabel.accessibilityIdentifier = @"priceLabel";
     
     
     [self.view addSubview: productImage];
