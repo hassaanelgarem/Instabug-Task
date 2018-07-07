@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "APIWrapper.h"
+#import "UserDefaultsCacher.h"
+#import "Cacher.h"
 
 @interface Product : NSObject
 
@@ -18,7 +20,9 @@ typedef void(^productCompletion)(NSMutableArray *);
 @property int price;
 @property NSString *imageUrl;
 
-+ (void) getProductsFrom: (int) from withCount: (int ) count withCompletionHandler:(productCompletion) completionHandler;
++ (int) pageSize;
++ (void) getProductsWithPage: (int) page withCompletionHandler:(productCompletion) completionHandler;
 - (id)initWithID: (int) productID withDescription: (NSString *) description withPrice: (int) price withImage: (NSString *) image;
+- (id)initWithData: (NSDictionary *) productJson;
 
 @end

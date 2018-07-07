@@ -33,7 +33,7 @@
 
 - (void)testGetProducts {
     XCTestExpectation *responseArrived = [self expectationWithDescription:@"Response for get products request arrived"];
-    [Product getProductsFrom:1 withCount:10 withCompletionHandler:^(NSMutableArray *products) {
+    [Product getProductsWithPage: 1 withCompletionHandler:^(NSMutableArray *products) {
         if (products) {
             XCTAssertEqual(products.count, 10, @"The count of the products returned is incorrect");
             XCTAssertNotNil(products[0], @"The first product obtained is nil");

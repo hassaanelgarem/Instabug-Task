@@ -50,6 +50,8 @@
         [cell fillData];
     } else {
         cell.descriptionLabel.text = @"Loading more data...";
+        cell.priceLabel.text = @"";
+        cell.productImageView.image = nil;
         if (!self.loadingMoreTableViewData) {
             self.loadingMoreTableViewData = YES;
             [self performSelector:@selector(addSomeMoreEntriesToTableView) withObject:nil afterDelay:5.0f];
@@ -62,9 +64,11 @@
 #pragma mark - UITableViewDelegate
 - (void)tableView:(UITableView *)theTableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    ProductDetailsViewController *vc = [[ProductDetailsViewController alloc] init];
-    vc.product = self.products[indexPath.row];
-    [self.navigationController pushViewController:vc animated:YES];
+    if (indexPath.row < self.products.count) {
+        ProductDetailsViewController *vc = [[ProductDetailsViewController alloc] init];
+        vc.product = self.products[indexPath.row];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -74,18 +78,21 @@
 #pragma mark - Helpers
 
 - (void)addSomeMoreEntriesToTableView {
-    self.productsPage += 1;
+//    self.productsPage += 1;
     [self fetchProducts];
 }
 
 - (void) fetchProducts {
-    int from = ((self.productsPage - 1) * self.pageSize) + 1;
-    [Product getProductsFrom:from withCount:self.pageSize withCompletionHandler:^(NSMutableArray * products) {
-        [self.products addObjectsFromArray:products];
-        self.loadingMoreTableViewData = NO;
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [tableView reloadData];
-        });
+    [Product getProductsWithPage: self.productsPage withCompletionHandler:^(NSMutableArray * products) {
+        if(products) {
+            [self.products addObjectsFromArray:products];
+            self.productsPage += 1;
+            self.loadingMoreTableViewData = NO;
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [tableView reloadData];
+            });
+        }
+        
         
     }];
 }
