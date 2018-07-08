@@ -19,11 +19,10 @@
 }
 
 - (void) cacheWithArray: (NSArray *) products withPage:(int)page {
-//    NSLog(self.protocol);
     [self.protocol cacheWithArray:products withPage:page];
 }
 
--(NSMutableArray*) retrieveWithPage: (int) page{
+-(NSArray*) retrieveWithPage: (int) page{
     return [self.protocol retrieveWithPage:page];
 }
 

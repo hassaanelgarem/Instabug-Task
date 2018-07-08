@@ -12,6 +12,6 @@
 
 @required
 -(void) cacheWithArray: (NSArray *) products withPage: (int) page;
--(NSMutableArray*) retrieveWithPage: (int) page;
+-(NSArray*) retrieveWithPage: (int) page;
 
 @end

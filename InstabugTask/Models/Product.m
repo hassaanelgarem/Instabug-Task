@@ -53,8 +53,12 @@
 
 + (void) getProductsWithPage: (int) page withCompletionHandler:(productCompletion) completionHandler {
     // Initialize cacher
-    UserDefaultsCacher *userDefaultsStrategy = [[UserDefaultsCacher alloc] init];
-    Cacher *cacher = [[Cacher alloc] initWithProtocol:userDefaultsStrategy];
+    
+//    UserDefaultsCacher *userDefaultsStrategy = [[UserDefaultsCacher alloc] init];
+//    Cacher *cacher = [[Cacher alloc] initWithProtocol:userDefaultsStrategy];
+    
+    FileCacher *fileStrategy = [[FileCacher alloc] init];
+    Cacher *cacher = [[Cacher alloc] initWithProtocol:fileStrategy];
     
     // Setting Parameteres
     int count = [Product pageSize];

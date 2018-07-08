@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "APIWrapper.h"
 #import "UserDefaultsCacher.h"
+#import "FileCacher.h"
 #import "Cacher.h"
 
 @interface Product : NSObject
